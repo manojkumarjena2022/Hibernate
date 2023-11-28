@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- <class name="com.mj.entity.Product" table="PRODUCT"
+		dynamic-insert="true">
+		O-R mapping
+		<id name="pid" column="PID">
+			<generator class="increment" />
+		</id>
+		<property name="pname" column="PNAME" />
+		<property name="price" column="PRICE" />
+		<property name="qty" column="QTY" />
+	</class> -->
+
+	<!-- <class name="com.mj.entity.Product" table="PRODUCT"
+		dynamic-insert="true">
+		O-R mapping
+		<id name="pid" column="PID">
+			<generator class="increment" />
+		</id>
+		<property name="pname">
+			<column name="PNAME"></column>
+		</property>
+		<property name="price">
+			<column name="PRICE"></column>
+		</property>
+		<property name="qty">
+			<column name="QTY"></column>
+		</property>
+	</class> -->
+	
+	<class name="com.mj.entity.Product" table="PRODUCT"
+		dynamic-insert="true">
+		<!-- O-R mapping -->
+		<id name="pid" column="PID">
+			<generator class="increment" />
+		</id>
+		<property name="pname"/>
+		<property name="price"/>
+		<property name="qty"/>
+	</class>
+
+</hibernate-mapping>
