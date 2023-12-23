@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+ <session-factory>
+ <!-- JDBC properties -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+		<property name="hibernate.connection.user">system</property>
+		<property name="hibernate.connection.password">tiger</property>
+		<!-- hibernate properties -->
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<!-- <property name="hbm2ddl.auto">validate</property> -->
+		<property name="hbm2ddl.auto">update</property>
+		<!-- mapping file names -->
+		<mapping resource="com/mj/entity/Stock.hbm.xml" />
+ </session-factory>
+</hibernate-configuration>
